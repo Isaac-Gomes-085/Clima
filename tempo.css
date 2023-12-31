@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1519692933481-e162a57d6721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+/* HEADER */
+header {
+    text-align: center;
+    color: #fff;
+}
+#back_btn {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+div #voltar {
+    display: none;
+    font-size: 2em;
+    color: #fff;
+    height: 28px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blocos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 15px;
+    color: #fff;
+    margin: auto;
+    background-color: #1876f2;
+
+}
+.blocos:hover {
+    background-color: #00000066;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scale(1.1);
+}
+
+/* dados */
+.dados {
+    text-align: center;
+    background-color: #3f3f44;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.input_icon_search {
+    display: flex;
+    padding: 10px;
+}
+#city_input {
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+    border: none;
+    text-transform: capitalize;
+}
+#procurar {
+    background-color: #8b8b8b;
+    padding: 5px 8px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 5px 8px  #202124;
+    animation: scale 1s ease-out;
+}
+#procurar:hover {
+    transform: scale(0.9);
+}
+
+.where {
+    display: flex;
+    padding: 5px;
+    font-size: 25px;
+    margin-left: 5px;
+}
+#city_name {
+    padding: 0px 5px;
+    margin-left: 5px;
+    text-decoration: solid;
+
+}
+/*MINIMO MAXIMO temperatura_atual */
+#box_principal {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+}
+.temperaturas {
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+}
+#temperatura_atual {
+    margin: auto 0px;
+}
+
+.min_max {
+    background-color: #0000003a;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#res_wind {
+    width: 60px;
+}
+.wind_humidity {
+    display: block;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+
+
+
+section h3 {
+    margin: auto;
+    font-size: 1.5em;
+    padding: 10px;
+    color: #fff;
+
+}
+/*relogio*/
+.relogio {
+    font-size: 0.5em;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #202124;
+    padding: 5px;
+    width: 140px;
+    margin: auto;
+}
+#icon-relogio {
+    color: #1877F2;
+}
+
+.outros_dias{
+    margin: 0.5rem auto 2rem;
+    padding: 0.5rem;
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    max-width: 650px;
+}
+
+
+button {
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    background-color: #00000023;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #9fbdff;
+    margin: 0.8em auto;
+}
+
+.dias {
+    text-align: center;
+    background-color: #00000066;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.dias:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    font-size: 1.8rem;
+}
+
+.sensaçao{
+    background-color: rgb(0, 0, 150);
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+#previsao {
+    text-transform: capitalize;
+}
+
+.temperatura_outros_dias {
+    padding: 5px;
+}
+.rodape {
+    color: #c0c0c0;
+    background-color: #72727248;
+    padding: 7px;
+    width: 300px;
+    margin: 0rem auto;
+}
+
+.name_endereços {
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    gap: 15px;
+}
+
+.lista_icones{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#face:hover {
+    color: #1877F2;
+    background: #ffffff;
+}
+
+#insta:hover {
+    background: linear-gradient(45deg, #FFBB01, #FD016C, #8033F5);
+    color: #ffffff;
+}
+
+#git:hover {
+    color: #F9FAFB;
+    background-color: #202124;
+}
+
+
+
+/* responsive */
+
+
+@media(max-width: 613px) {
+    .blocos {
+        width: 400px;
+    }
+    
+    .outros_dias {
+        max-width: 400px;
+    }
+    
+    .dias:hover {
+        transition: all 0.5s;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 510px) {
+    .data {
+        margin:0em auto 1em;
+    }
+    
+    div #voltar {
+        display: block;
+    }
+
+    .outros_dias {
+        width: auto;
+    }
+
+    button {
+        display: flex;
+    }
+
+    .dias {
+        display: none;
+    }
+
+    .botao:hover {
+        background-color: #000000;
+        transition: all 0.5s;
+        transform: scale(1.2);
+        border-radius: 15px;
+    }
+}
+
+@media(max-width: 410px) {
+    .blocos {
+        width: auto;
+        font-size: 20px;
+    }
+    
+    .data {
+        margin:0em auto 1em;
+    }
+    
+    div #voltar {
+        display: block;
+    }
+
+    .outros_dias {
+        width: auto;
+    }
+
+    button {
+        display: flex;
+    }
+
+    .dias {
+        display: none;
+    }
+
+    .botao:hover {
+        background-color: #000000;
+        transition: all 0.5s;
+        transform: scale(1.2);
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="tempo.css">
+    <title>Clima</title>
+</head>
+<body>
+    <div id="back_btn">
+        <i class="bi bi-backspace-fill" id="voltar" onclick="back()"></i>
+    </div>
+    <header>
+        <h1>Climametria</h1>
+    </header>
+    
+    <main class="conteiner">
+        <section>
+            <div class="data">
+                <div id="dia">
+                    
+                </div>
+                <u>/</u>
+                <div id="mes">
+                    
+                </div>
+                <u>/</u>
+                <div id="ano">
+
+                </div>
+            </div>
+
+            <div class="blocos">
+                <div class="dados">
+                    <div>
+                        <img src="https://flagsapi.com/BR/flat/64.png" id="pais">
+                    </div>
+                    <div class="input_icon_search">
+                        <input type="text" id="city_input" placeholder="Pais,Cidade e Bairro">
+                        <i class="bi bi-search" id="procurar"></i>
+                    </div> 
+
+                    <div class="where">
+                        <i class="bi bi-geo-alt"></i>
+                        <p id="city_name">Fortaleza</p>
+                    </div>          
+                </div>
+
+                <div id="img_box_principal">
+                    <img src="img.Tempo/nublado_icone.png" alt="Previsão do tempo">
+                </div>
+                <div id="box_principal">
+                    <div id="previsao">
+                        nublado
+                    </div>
+
+                    <div class="temperaturas">
+                        <span id="temperatura_atual">27&deg;C</span>
+                        <div class="min_max">
+                            <span id="max">
+                                max
+                            </span>
+                            <span id="min">
+                                min
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wind_humidity">
+                        <span id="wind">
+                            <i class="bi bi-wind"></i>
+                            <span id="res_wind">0km</span>
+                        </span>
+                        <br>
+                        <span id="humidity">
+                            <i class="bi bi-moisture"></i>
+                            <span id="res_humidity">00%</span>
+                        </span>
+                    </div>
+                    <div class="relogio">
+                        <i class="bi bi-alarm" id="icon-relogio"></i>
+                        <span id="hora">
+                            04
+                        </span>
+                        :
+                        <span id="minuto">
+                            25
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+            <h3>Outros dias</h3>
+            <div class="outros_dias">
+                
+
+                <div class="botao">
+                    <button id="segunda_btn" onclick="dia1()">segunda</button>
+                </div>
+
+                <div class="dias" id="segunda">segunda
+                    <div class="imagem">
+                        <img src="img.Tempo/nublado_icone.png" alt="Previsão do tempo">
+
+                        <div class="temperatura_outros_dias">
+                            30°
+                        </div>
+                    </div>
+                    <div class="sensaçao" >
+                        sensação termica <br>
+                        25 °C 
+                    </div>
+                </div>
+                
+                <div class="botao">
+                    <button id="quarta_btn" onclick="dia2()">quarta</button>
+                </div>
+
+                <div class="dias" id="quarta">quarta
+                    <div class="imagem">
+                        <img src="img.Tempo/chuva_forte.png" alt="Previsão do tempo">
+
+                        <div class="temperatura_outros_dias">
+                            26°
+                        </div>
+                    </div>
+                    <div class="sensaçao">
+                        sensação termica <br>
+                        25 °C
+                    </div>
+                </div>
+
+                <div class="botao">
+                    <button id="sexta_btn" onclick="dia3()">sexta</button>
+                </div>  
+                  
+                <div class="dias" id="sexta">sexta
+                    <div class="imagem">
+                        <img src="img.Tempo/sol_icone.png" alt="Previsão do tempo">
+
+                        <div class="temperatura_outros_dias">
+                            27°
+                        </div>
+                    </div>
+                    <div class="sensaçao">
+                        sensação termica <br>
+                        25 °C
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <nav>
+            <ul class="name_endereços">
+                <p id="nome"> &copy; Isaac Gomes </p>
+                <li class="lista_icones">
+                    <a href="https://www.facebook.com/" target="_blank" id="face">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="lista_icones">
+                    <a href="https://www.instagram.com/" target="_blank" id="insta">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="lista_icones">
+                    <a href="https://github.com/BRAGI1/Isaac-Gomes.git" target="_blank" id="git">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="time.js" defer></script>
+</body>
+</html>
