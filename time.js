@@ -1,5 +1,3 @@
-const apiKey = "b37b7a16021634218e802e0cca259bf2"
-
 
 const cidade_input = document.querySelector("#city_input")
 const procurar_btn = document.querySelector("#procurar")
