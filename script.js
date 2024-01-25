@@ -1,5 +1,4 @@
-const apiKey = "b37b7a16021634218e802e0cca259bf2"
-
+import { apiKey } from "./.env"
 
 const cidade_input = document.querySelector("#city_input")
 const procurar_btn = document.querySelector("#procurar")
@@ -14,7 +13,7 @@ let tempMin = document.getElementById("min")
 
 //FUNÇOES
 const getWeatherData = async(city) => {
-    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`;
 
     const res = await fetch(apiWeatherURL)
     const data = await res.json()
