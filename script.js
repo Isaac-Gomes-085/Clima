@@ -1,4 +1,6 @@
+
 import { apiKey } from "./.env"
+
 
 const cidade_input = document.querySelector("#city_input")
 const procurar_btn = document.querySelector("#procurar")
