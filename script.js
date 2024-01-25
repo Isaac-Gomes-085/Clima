@@ -1,5 +1,5 @@
 
-import { apiKey } from "./.env"
+import { apiKey } = require("./.env")
 
 
 const cidade_input = document.querySelector("#city_input")
